@@ -14,6 +14,7 @@ import Notfound from "./routes/notfound";
 function App() {
   return (
     <div className="App">
+      <Background></Background>
       <Header></Header>
       <Routes>
         <Route path="/" element={<Home />}></Route>
@@ -23,7 +24,6 @@ function App() {
         <Route path="*" element={<Notfound />}></Route>
       </Routes>
       <Footer></Footer>
-      <Background></Background>
     </div>
   );
 }
