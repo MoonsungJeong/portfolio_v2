@@ -1,16 +1,19 @@
+import React, { useEffect } from "react";
 import "./background.css";
 
 export default function Header() {
-  window.addEventListener("scroll", function () {
-    let stars = document.getElementById("stars");
-    let moon = document.getElementById("moon");
-    let cloud = document.getElementById("cloud");
-    let ocean = document.getElementById("ocean");
-    let value = window.scrollY;
-    stars.style.left = value * -0.25 + "px";
-    moon.style.top = value * 1.05 + "px";
-    cloud.style.left = value * 0.25 + "px";
-    ocean.style.top = value * 0 + "px";
+  useEffect(() => {
+    window.addEventListener("scroll", function () {
+      let stars = document.getElementById("stars");
+      let moon = document.getElementById("moon");
+      let cloud = document.getElementById("cloud");
+      let ocean = document.getElementById("ocean");
+      let value = window.scrollY;
+      stars.style.left = value * -0.25 + "px";
+      moon.style.top = value * 1.05 + "px";
+      cloud.style.left = value * 0.25 + "px";
+      ocean.style.top = value * 0 + "px";
+    });
   });
   return (
     <div>
