@@ -4,6 +4,7 @@ import React, { useEffect } from "react";
 
 export default function Header() {
   useEffect(() => {
+    // Add Scroll event
     let lastScrollTop = 0;
     window.addEventListener(
       "scroll",
@@ -22,11 +23,22 @@ export default function Header() {
       },
       false
     );
+    // Initalize left position of Indicator
+    const list = document.querySelector(".list");
+    const indicator = document.querySelector(".indicator");
+    indicator.style.left = list.offsetLeft - list.offsetWidth / 2 - 2 + "px";
   });
+
+  // Indicator move when CLICK event happened
   function activeLink(event) {
     const list = document.querySelectorAll(".list");
+    const indicator = document.querySelector(".indicator");
+    const target = event.currentTarget;
+    const translate_value = target.offsetLeft - target.offsetWidth / 2 - 2;
     list.forEach((item) => item.classList.remove("active"));
-    event.currentTarget.classList.add("active");
+    target.classList.add("active");
+    //indicator.style.transform = "translateX(" + translate_value + "px)";
+    indicator.style.left = translate_value + "px";
   }
   return (
     <div className="navigation">
