@@ -21,10 +21,6 @@
   list-style: none;
   position: relative;
   /* 350 / 5 = 70 */
-  width: 70px;
-  height: 60px;
-  width: 2em;
-  height: 2em;
   z-index: 2;
 }
 .navigation ul li a {
@@ -40,12 +36,13 @@
   position: relative;
   display: block;
   line-height: 65px;
+  width: 1em;
   font-size: 1.5em;
   transition: 0.5s;
   color: #222327;
 }
-.navigation ul li.active a .icon {
-  transform: translateY(-32px);
+.navigation ul li a.active .icon {
+  transform: translateY(-36px);
   color: #2196f3;
 }
 .navigation ul li a .text {
@@ -61,7 +58,7 @@
   opacity: 0;
   transform: translateY(15px);
 }
-.navigation ul li.active a .text {
+.navigation ul li a.active .text {
   transform: translateY(-4px);
   opacity: 1;
 }

@@ -29,16 +29,15 @@ header {
   header ul li {
     list-style: none;
     margin-left: 20px;
-
-    text-decoration: none;
-    padding: 6px 15px;
-    color: #fff;
-    border-radius: 20px;
   }
   header ul li a {
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 6px 15px;
   }
-  header ul li:hover,
-  header ul li.active {
+  header ul li a:hover,
+  header ul li a.active {
     background: #fff;
     color: #2b1055;
   }

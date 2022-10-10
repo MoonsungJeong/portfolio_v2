@@ -26,7 +26,8 @@ export default function Header() {
     // Initalize left position of Indicator
     const list = document.querySelector(".footer-list");
     const indicator = document.querySelector(".indicator");
-    indicator.style.left = list.offsetLeft - list.offsetWidth / 2 - 2 + "px";
+    indicator.style.left =
+      list.parentNode.offsetLeft - list.parentNode.offsetWidth + "px";
   });
 
   // Indicator move when CLICK event happened
@@ -34,74 +35,78 @@ export default function Header() {
     const list = document.querySelectorAll(".footer-list");
     const indicator = document.querySelector(".indicator");
     const target = event.currentTarget;
-    const translate_value = target.offsetLeft - target.offsetWidth / 2 - 2;
+    const translate_value =
+      target.parentNode.offsetLeft - target.parentNode.offsetWidth;
     list.forEach((item) => item.classList.remove("active"));
     target.classList.add("active");
-    //indicator.style.transform = "translateX(" + translate_value + "px)";
     indicator.style.left = translate_value + "px";
   }
   return (
     <footer className="navigation">
       <ul>
-        <li
-          className="footer-list active"
-          onClick={(event) => {
-            activeNavFooter(event);
-          }}
-        >
-          <Link to="/">
+        <li>
+          <Link
+            to="/"
+            className="footer-list active"
+            onClick={(event) => {
+              activeNavFooter(event);
+            }}
+          >
             <span className="icon">
               <ion-icon name="home-outline"></ion-icon>
             </span>
             <span className="text">Home</span>
           </Link>
         </li>
-        <li
-          className="footer-list"
-          onClick={(event) => {
-            activeNavFooter(event);
-          }}
-        >
-          <Link to="/portfolio">
+        <li>
+          <Link
+            to="/portfolio"
+            className="footer-list"
+            onClick={(event) => {
+              activeNavFooter(event);
+            }}
+          >
             <span className="icon">
               <ion-icon name="person-outline"></ion-icon>
             </span>
             <span className="text">Profile</span>
           </Link>
         </li>
-        <li
-          className="footer-list"
-          onClick={(event) => {
-            activeNavFooter(event);
-          }}
-        >
-          <Link to="/contact">
+        <li>
+          <Link
+            to="/contact"
+            className="footer-list"
+            onClick={(event) => {
+              activeNavFooter(event);
+            }}
+          >
             <span className="icon">
               <ion-icon name="chatbubble-outline"></ion-icon>
             </span>
             <span className="text">Contact</span>
           </Link>
         </li>
-        <li
-          className="footer-list"
-          onClick={(event) => {
-            activeNavFooter(event);
-          }}
-        >
-          <Link to="/cv">
+        <li to="/cv">
+          <Link
+            className="footer-list"
+            onClick={(event) => {
+              activeNavFooter(event);
+            }}
+          >
             <span className="icon">
               <ion-icon name="chatbubble-outline"></ion-icon>
             </span>
             <span className="text">CV</span>
           </Link>
         </li>
-        <li
-          className="footer-list"
-          onClick={(event) => {
-            activeNavFooter(event);
-          }}
-        >
-          <Link to="/">
+        <li>
+          <Link
+            to="/"
+            className="footer-list"
+            onClick={(event) => {
+              activeNavFooter(event);
+            }}
+          >
             <span className="icon">
               <ion-icon name="settings-outline"></ion-icon>
             </span>

@@ -11,41 +11,53 @@ export default function Header() {
   return (
     <header>
       <Link to="/" className="logo">
-        Logo
+        Moonsung
       </Link>
       <nav>
         <ul>
-          <li
-            className="header-list active"
-            onClick={(event) => {
-              activeNavHeader(event);
-            }}
-          >
-            <Link to="/">Home</Link>
+          <li>
+            <Link
+              to="/"
+              className="header-list active"
+              onClick={(event) => {
+                activeNavHeader(event);
+              }}
+            >
+              Home
+            </Link>
           </li>
-          <li
-            className="header-list"
-            onClick={(event) => {
-              activeNavHeader(event);
-            }}
-          >
-            <Link to="/portfolio">Portfolio</Link>
+          <li>
+            <Link
+              to="/portfolio"
+              className="header-list"
+              onClick={(event) => {
+                activeNavHeader(event);
+              }}
+            >
+              Portfolio
+            </Link>
           </li>
-          <li
-            className="header-list"
-            onClick={(event) => {
-              activeNavHeader(event);
-            }}
-          >
-            <Link to="/contact">Contact</Link>
+          <li>
+            <Link
+              to="/contact"
+              className="header-list"
+              onClick={(event) => {
+                activeNavHeader(event);
+              }}
+            >
+              Contact
+            </Link>
           </li>
-          <li
-            className="header-list"
-            onClick={(event) => {
-              activeNavHeader(event);
-            }}
-          >
-            <Link to="/cv">CV</Link>
+          <li>
+            <Link
+              to="/cv"
+              className="header-list"
+              onClick={(event) => {
+                activeNavHeader(event);
+              }}
+            >
+              CV
+            </Link>
           </li>
         </ul>
       </nav>
