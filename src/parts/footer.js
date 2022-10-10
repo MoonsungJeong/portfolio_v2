@@ -24,14 +24,14 @@ export default function Header() {
       false
     );
     // Initalize left position of Indicator
-    const list = document.querySelector(".list");
+    const list = document.querySelector(".footer-list");
     const indicator = document.querySelector(".indicator");
     indicator.style.left = list.offsetLeft - list.offsetWidth / 2 - 2 + "px";
   });
 
   // Indicator move when CLICK event happened
-  function activeLink(event) {
-    const list = document.querySelectorAll(".list");
+  function activeNavFooter(event) {
+    const list = document.querySelectorAll(".footer-list");
     const indicator = document.querySelector(".indicator");
     const target = event.currentTarget;
     const translate_value = target.offsetLeft - target.offsetWidth / 2 - 2;
@@ -41,12 +41,12 @@ export default function Header() {
     indicator.style.left = translate_value + "px";
   }
   return (
-    <div className="navigation">
+    <footer className="navigation">
       <ul>
         <li
-          className="list active"
+          className="footer-list active"
           onClick={(event) => {
-            activeLink(event);
+            activeNavFooter(event);
           }}
         >
           <Link to="/">
@@ -57,9 +57,9 @@ export default function Header() {
           </Link>
         </li>
         <li
-          className="list"
+          className="footer-list"
           onClick={(event) => {
-            activeLink(event);
+            activeNavFooter(event);
           }}
         >
           <Link to="/portfolio">
@@ -70,9 +70,9 @@ export default function Header() {
           </Link>
         </li>
         <li
-          className="list"
+          className="footer-list"
           onClick={(event) => {
-            activeLink(event);
+            activeNavFooter(event);
           }}
         >
           <Link to="/contact">
@@ -83,9 +83,9 @@ export default function Header() {
           </Link>
         </li>
         <li
-          className="list"
+          className="footer-list"
           onClick={(event) => {
-            activeLink(event);
+            activeNavFooter(event);
           }}
         >
           <Link to="/cv">
@@ -96,9 +96,9 @@ export default function Header() {
           </Link>
         </li>
         <li
-          className="list"
+          className="footer-list"
           onClick={(event) => {
-            activeLink(event);
+            activeNavFooter(event);
           }}
         >
           <Link to="/">
@@ -110,6 +110,6 @@ export default function Header() {
         </li>
         <div className="indicator"></div>
       </ul>
-    </div>
+    </footer>
   );
 }

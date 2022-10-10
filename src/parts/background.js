@@ -23,7 +23,7 @@ export default function Header() {
         <img src="image/cloud.png" alt="cloud" id="cloud"></img>
         <img src="image/ocean.png" alt="ocean" id="ocean"></img>
       </section>
-      <div className="sec" id="sec">
+      {/* <div className="sec" id="sec">
         <h2>Parallax Scrolling Effects</h2>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, minima
@@ -97,7 +97,7 @@ export default function Header() {
           quibusdam sint placeat quod cumque nostrum consectetur ullam pariatur
           rem. Expedita?
         </p>
-      </div>
+      </div> */}
     </div>
   );
 }
