@@ -24,16 +24,14 @@ section img#moon {
 section img#ocean {
   z-index: 10;
 }
-
 @media (min-width: 770px) {
-  section::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+  .background-padding {
     height: 100px;
+    width: 100%;
     background: linear-gradient(to top, #000468, transparent);
-    z-index: 1000;
+    position: absolute;
+    top: 89vh;
+    z-index: 11;
   }
 }
 
@@ -41,7 +39,13 @@ section img#ocean {
   position: relative;
   padding: 100px;
   background: #000468;
+
+  position: absolute;
+  top: 0;
+  background: none;
+  z-index: 12;
 }
+
 .sec h2 {
   font-size: 3.5em;
   margin-bottom: 10px;

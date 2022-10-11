@@ -1,0 +1,27 @@
+.content-b {
+  position: relative;
+  padding: 100px;
+  background: #000468;
+}
+.row {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+
+  flex-wrap: wrap;
+  margin-bottom: 0.8rem;
+}
+.col_t12_x8 {
+  box-sizing: border-box;
+  flex-basis: 100%;
+  max-width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+.col_t12_x4 {
+  box-sizing: border-box;
+  flex-basis: 100%;
+  max-width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
