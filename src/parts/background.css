@@ -38,7 +38,8 @@ section img#ocean {
   .background-padding {
     height: 100px;
     width: 100%;
-    background: linear-gradient(to top, #000468, transparent);
+    /*     background: linear-gradient(to top, #000468, transparent); */
+    background: linear-gradient(to top, #05274c, transparent);
     position: absolute;
     top: 89vh;
     z-index: 11;

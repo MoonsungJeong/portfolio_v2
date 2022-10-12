@@ -1,9 +1,10 @@
 import "./page.css";
-import Card from "../parts/card";
 import CardBasic from "../parts/cardBasic";
 import CardPhotos from "../parts/cardPhotos";
 import CardSkills from "../parts/cardSkills";
 import CardSocial from "../parts/cardSocial";
+import CardLink from "../parts/cardLink";
+import CardBasic2 from "../parts/cardBasic2";
 
 export default function Home() {
   return (
@@ -32,12 +33,36 @@ export default function Home() {
             <CardSocial></CardSocial>
           </div>
           <div className="col_t12_x4">
-            <CardBasic title="Link" content={["1", "Worm 2 :"]}></CardBasic>
+            <CardLink
+              title="Link"
+              content={[
+                {
+                  link: "Worm 2",
+                  address: "https://moonsungjeong.github.io/worm_v2/",
+                },
+              ]}
+            ></CardLink>
           </div>
         </div>
         <div className="row">
           <div className="col_t12_x12">
-            <Card title="Experience" content="abcdefghijklmn"></Card>
+            <CardBasic2
+              title="Experience"
+              content={[
+                {
+                  brief: "Hackathon & Competition",
+                  desc: "I participated in a hackathon (24 hours coding competition) and a product design competition (making solutions to real-world problems with IT technology) in university. I enjoyed challenging myself to create something new, learning new technologies, and meeting new people. Although I didn’t win, it became a good motivation to continue improving my abilities.",
+                },
+                {
+                  brief: "Education",
+                  desc: "I went to Sejong University in Korea and graduated with bachelor’s degree in Information and Communication Engineering. While I was studying, I did many projects that taught me a lot about computer programming. I made codec (with Fourier transform) which is used in many fields. I worked as a team leader in a school project that analyzed differences between Live streaming and video streaming in a network subject.",
+                },
+                {
+                  brief: "Opentutorials & Youtube",
+                  desc: "Since coming to Australia, I have done additional self-study to learn more about web development. I did this with Opentutorials (non-profit coding community in Korea), many programming YouTube channels, and stackoverflow. I have learned to use HTML, CSS, JavaScript.",
+                },
+              ]}
+            ></CardBasic2>
           </div>
         </div>
       </div>
