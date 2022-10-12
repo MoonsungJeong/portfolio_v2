@@ -28,3 +28,7 @@
 .card-skill-container > div {
   text-align: center;
 }
+.card-skill-container {
+  font-size: 3rem;
+  color: #e0e0e0;
+}

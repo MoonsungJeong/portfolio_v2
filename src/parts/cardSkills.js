@@ -6,7 +6,7 @@ export default function CardSkills() {
       <div className="card-content card-skill-container">
         <div>
           <img
-            class="card-skill-img"
+            className="card-skill-img"
             title="HTML"
             alt="HTML"
             src="image/html.png"
@@ -14,7 +14,7 @@ export default function CardSkills() {
         </div>
         <div>
           <img
-            class="card-skill-img"
+            className="card-skill-img"
             title="CSS"
             alt="CSS"
             src="image/css.png"
@@ -22,7 +22,7 @@ export default function CardSkills() {
         </div>
         <div>
           <img
-            class="card-skill-img"
+            className="card-skill-img"
             title="JavaScript"
             alt="JavaScript"
             src="image/javascript.png"
@@ -30,7 +30,7 @@ export default function CardSkills() {
         </div>
         <div>
           <img
-            class="card-skill-img"
+            className="card-skill-img"
             title="React"
             alt="React"
             src="image/react.png"
@@ -38,7 +38,7 @@ export default function CardSkills() {
         </div>
         <div>
           <img
-            class="card-skill-img"
+            className="card-skill-img"
             title="Node.js"
             alt="Node.js"
             src="image/node.png"
@@ -46,7 +46,7 @@ export default function CardSkills() {
         </div>
         <div>
           <img
-            class="card-skill-img"
+            className="card-skill-img"
             title="MySQL"
             alt="MySQL"
             src="image/database.png"
@@ -54,7 +54,7 @@ export default function CardSkills() {
         </div>
         <div>
           <img
-            class="card-skill-img"
+            className="card-skill-img"
             title="GitHub"
             alt="GitHub"
             src="image/github.png"
@@ -62,7 +62,7 @@ export default function CardSkills() {
         </div>
         <div>
           <img
-            class="card-skill-img"
+            className="card-skill-img"
             title="AWS"
             alt="AWS"
             src="image/aws.png"
