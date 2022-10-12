@@ -1,6 +1,6 @@
 .content-b {
   position: relative;
-  padding: 100px;
+  padding: 50px;
   background: #000468;
 }
 .row {
@@ -11,6 +11,13 @@
   flex-wrap: wrap;
   margin-bottom: 0.8rem;
 }
+.col_t12_x4 {
+  box-sizing: border-box;
+  flex-basis: 100%;
+  max-width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
 .col_t12_x8 {
   box-sizing: border-box;
   flex-basis: 100%;
@@ -18,10 +25,21 @@
   padding-right: 1rem;
   padding-left: 1rem;
 }
-.col_t12_x4 {
-  box-sizing: border-box;
+.col_t12_x12 {
   flex-basis: 100%;
   max-width: 100%;
   padding-right: 1rem;
   padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 770px) {
+  .col_t12_x8 {
+    flex-basis: 66.667%;
+    max-width: 66.667%;
+  }
+  .col_t12_x4 {
+    flex-basis: 33.333%;
+    max-width: 33.333%;
+  }
 }
