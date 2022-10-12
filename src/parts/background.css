@@ -24,6 +24,16 @@ section img#moon {
 section img#ocean {
   z-index: 10;
 }
+#btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 30px;
+  border-radius: 40px;
+  background: #fff;
+  color: #2b1055;
+  font-size: 1.5em;
+  z-index: 9;
+}
 @media (min-width: 770px) {
   .background-padding {
     height: 100px;
@@ -33,25 +43,4 @@ section img#ocean {
     top: 89vh;
     z-index: 11;
   }
-}
-
-.sec {
-  position: relative;
-  padding: 100px;
-  background: #000468;
-
-  position: absolute;
-  top: 0;
-  background: none;
-  z-index: 12;
-}
-
-.sec h2 {
-  font-size: 3.5em;
-  margin-bottom: 10px;
-  color: #fff;
-}
-.sec p {
-  font-size: 1em;
-  color: #fff;
 }

@@ -1,10 +1,8 @@
-import "./card.css";
 import "./cardPhotos.css";
 import React, { useEffect } from "react";
 
-export default function CardPhotos(props) {
+export default function CardPhotos() {
   useEffect(() => {
-    console.log("test");
     var slide = document.querySelector(".slider");
     if (slide) {
       var slideList = document.querySelector(".slide_list");

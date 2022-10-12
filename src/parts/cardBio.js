@@ -1,5 +1,5 @@
 import "./card.css";
-export default function Card(props) {
+export default function CardBio(props) {
   let content = [];
   for (let i = 0; i < props.content.length; i++) {
     content.push(
