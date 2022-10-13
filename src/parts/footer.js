@@ -67,9 +67,9 @@ export default function Header() {
             }}
           >
             <span className="icon">
-              <ion-icon name="person-outline"></ion-icon>
+              <ion-icon name="grid-outline"></ion-icon>
             </span>
-            <span className="text">Profile</span>
+            <span className="text">Portfolio</span>
           </Link>
         </li>
         <li>
@@ -81,7 +81,7 @@ export default function Header() {
             }}
           >
             <span className="icon">
-              <ion-icon name="chatbubble-outline"></ion-icon>
+              <ion-icon name="mail-outline"></ion-icon>
             </span>
             <span className="text">Contact</span>
           </Link>
@@ -94,23 +94,9 @@ export default function Header() {
             }}
           >
             <span className="icon">
-              <ion-icon name="chatbubble-outline"></ion-icon>
+              <ion-icon name="person-outline"></ion-icon>
             </span>
             <span className="text">CV</span>
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/"
-            className="footer-list"
-            onClick={(event) => {
-              activeNavFooter(event);
-            }}
-          >
-            <span className="icon">
-              <ion-icon name="settings-outline"></ion-icon>
-            </span>
-            <span className="text">Settings</span>
           </Link>
         </li>
         <div className="indicator"></div>

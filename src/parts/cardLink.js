@@ -1,7 +1,7 @@
 import "./card.css";
 export default function Card(props) {
   let content = [];
-  console.log(props.content);
+
   for (let i = 0; i < props.content.length; i++) {
     content.push(
       <div key={i}>

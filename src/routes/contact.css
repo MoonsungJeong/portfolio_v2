@@ -1,0 +1,80 @@
+.contact {
+  width: 100%;
+  z-index: 13;
+}
+
+.contact h2 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 600;
+  margin: 2rem;
+  padding-top: 1rem;
+  color: #ffffff;
+  display: none;
+}
+
+.contact-container {
+  height: 80vh;
+}
+.contact-mail-box {
+  text-align: center;
+}
+.contact-mail-box form {
+  margin-top: 5em;
+  display: inline-flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 30rem;
+  padding: 1.2rem;
+  background: rgba(5, 39, 76, 1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 1), 0 4px 8px rgba(0, 0, 0, 1);
+  border-radius: 0.8rem;
+  border: 2px solid #000;
+}
+.contact-mail-box input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 0.3rem;
+  height: 2rem;
+  background: #7597de;
+}
+.contact-mail-box textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 0.3rem;
+  height: 8rem;
+  background: #7597de;
+}
+.contact-button {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 1), 0 2px 4px rgba(0, 0, 0, 1);
+  height: 2rem;
+  width: 100%;
+  border-radius: 0.3rem;
+  border: none;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  background: #7597de;
+}
+.contact-button:active {
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 1), 0 0px 0px rgba(0, 0, 0, 1);
+  transform: translate3d(0.1rem, 0.1rem, 0);
+}
+.thankyou_message h3 {
+  font-size: 2.5rem;
+  margin-top: 3.5rem;
+  margin-bottom: 3rem;
+  color: white;
+}
+.thankyou_message p {
+  font-size: 2rem;
+  margin-bottom: 3.5rem;
+  color: white;
+}
+
+@media (min-width: 770px) {
+  .contact-mail-box form {
+    margin-top: 10em;
+  }
+}
