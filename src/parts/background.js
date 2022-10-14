@@ -19,7 +19,7 @@ export default function Header() {
   });
   return (
     <div>
-      <section>
+      <section className="img-section">
         <img src="image/stars2.png" alt="stars" id="stars"></img>
         <img src="image/moon2.png" alt="moon" id="moon"></img>
         <a href="#home" id="btn">

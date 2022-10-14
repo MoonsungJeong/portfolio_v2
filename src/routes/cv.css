@@ -1,7 +1,8 @@
 .cv {
   position: absolute;
   top: 0;
-  height: 1000%;
+  max-height: 700%;
+
   width: 100%;
   z-index: 10001;
   background: #ebebeb;
@@ -18,5 +19,23 @@
   flex-direction: column;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
     0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-  background: #2baddb;
+  background: #2bad;
+  /* background: #2baddb; */
+  /* background: hsla(0, 0%, 100%, 0.4); */
+}
+.cv-main {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.cv-main h3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: 0;
+  color: #a2a4a5;
+}
+@media (min-width: 650px) {
+  .cv-side {
+    width: 25%;
+  }
 }

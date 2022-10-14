@@ -1,7 +1,7 @@
 .card {
-  padding: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  padding: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
   background: #7597de;
   /*   background: #05274c */
   box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
@@ -15,7 +15,7 @@
 }
 .card-content h3 {
   font-weight: 600;
-  font-size: 1.4rem;
+  font-size: 1.4em;
   color: #e0e0e0;
 }
 .card p {
@@ -25,16 +25,39 @@
 .card-skill-container {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
-  grid-gap: 0.6rem;
+  grid-gap: 0.6em;
 }
 .card-skill-img {
-  height: 3rem;
-  width: 3rem;
+  height: 3em;
+  width: 3em;
 }
 .card-skill-container > div {
   text-align: center;
 }
 .card-skill-container {
-  font-size: 3rem;
+  font-size: 3em;
   color: #e0e0e0;
+}
+.card-cv-container {
+  padding: 1em;
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+  background: #ffffff;
+  box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
+    0 2px 4px rgba(0, 0, 0, 0.24);
+  border-radius: 2px;
+}
+.card-cv-container h4 {
+  font-weight: 600;
+  font-size: 1.3em;
+  color: #2c3e50;
+}
+.card-cv-container .date-subtitle {
+  font-size: 0.8em;
+  color: #a2a4a5;
+}
+.card-cv-container p {
+  color: #2c3e50;
+  text-align: left;
+  margin: 1rem 0;
 }
