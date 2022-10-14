@@ -23,36 +23,35 @@ export default function Header() {
       },
       false
     );
-    // Initalize left position of Indicator
-    const list = document.querySelector(".footer-list");
-    const indicator = document.querySelector(".indicator");
-    indicator.style.left =
-      list.parentNode.offsetLeft - list.parentNode.offsetWidth + "px";
-
     window.addEventListener("popstate", function (event) {
       // The URL changed...
-      let pathPrevious = "Home";
-      if (this.window.location.pathname !== "/") {
-        pathPrevious =
-          window.location.pathname[1].toUpperCase() +
-          this.window.location.pathname.substring(2);
-      }
-      const pathList = document.querySelectorAll(".text");
-      pathList.forEach((item) => {
-        if (item.innerText === pathPrevious) {
-          const list = document.querySelectorAll(".footer-list");
-          const indicator = document.querySelector(".indicator");
-          const target = item.parentNode;
-          const translate_value =
-            target.parentNode.offsetLeft - target.parentNode.offsetWidth;
-          list.forEach((item) => item.classList.remove("active"));
-          target.classList.add("active");
-          indicator.style.left = translate_value + "px";
-        }
-      });
+      initNavFooter();
     });
+    // Initalize left position of Indicator
+    initNavFooter();
   });
-
+  // Footer nav initialize
+  function initNavFooter() {
+    let pathPrevious = "Home";
+    if (window.location.pathname !== "/") {
+      pathPrevious =
+        window.location.pathname[1].toUpperCase() +
+        window.location.pathname.substring(2);
+    }
+    const pathList = document.querySelectorAll(".text");
+    pathList.forEach((item) => {
+      if (item.innerText === pathPrevious) {
+        const list = document.querySelectorAll(".footer-list");
+        const indicator = document.querySelector(".indicator");
+        const target = item.parentNode;
+        const translate_value =
+          target.parentNode.offsetLeft - target.parentNode.offsetWidth;
+        list.forEach((item) => item.classList.remove("active"));
+        target.classList.add("active");
+        indicator.style.left = translate_value + "px";
+      }
+    });
+  }
   // Indicator move when CLICK event happened
   function activeNavFooter(event) {
     const list = document.querySelectorAll(".footer-list");
