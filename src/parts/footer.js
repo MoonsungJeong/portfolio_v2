@@ -28,6 +28,29 @@ export default function Header() {
     const indicator = document.querySelector(".indicator");
     indicator.style.left =
       list.parentNode.offsetLeft - list.parentNode.offsetWidth + "px";
+
+    window.addEventListener("popstate", function (event) {
+      // The URL changed...
+      let pathPrevious = "Home";
+      if (this.window.location.pathname !== "/") {
+        pathPrevious =
+          window.location.pathname[1].toUpperCase() +
+          this.window.location.pathname.substring(2);
+      }
+      const pathList = document.querySelectorAll(".text");
+      pathList.forEach((item) => {
+        if (item.innerText === pathPrevious) {
+          const list = document.querySelectorAll(".footer-list");
+          const indicator = document.querySelector(".indicator");
+          const target = item.parentNode;
+          const translate_value =
+            target.parentNode.offsetLeft - target.parentNode.offsetWidth;
+          list.forEach((item) => item.classList.remove("active"));
+          target.classList.add("active");
+          indicator.style.left = translate_value + "px";
+        }
+      });
+    });
   });
 
   // Indicator move when CLICK event happened
