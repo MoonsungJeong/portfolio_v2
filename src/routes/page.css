@@ -2,12 +2,13 @@
   position: relative;
   padding: 50px 25px;
   /*   background: #000468; */
-  background: #05274c;
+  /* background: #05274c; */
 }
 .content-t {
   position: absolute;
   top: 0;
   /*   background: #000468; */
+  /* background: #05274c; */
 }
 .row {
   box-sizing: border-box;

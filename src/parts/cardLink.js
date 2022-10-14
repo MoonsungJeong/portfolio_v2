@@ -4,11 +4,14 @@ export default function Card(props) {
 
   for (let i = 0; i < props.content.length; i++) {
     content.push(
-      <div key={i}>
-        <a href={props.content[i].address} target="_blank" rel="noreferrer">
-          {props.content[i].link}
-        </a>
-      </div>
+      <a
+        href={props.content[i].address}
+        target="_blank"
+        rel="noreferrer"
+        key={i}
+      >
+        {props.content[i].link}
+      </a>
     );
   }
   return (

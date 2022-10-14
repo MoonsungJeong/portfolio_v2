@@ -86,8 +86,9 @@ export default function Header() {
             <span className="text">Contact</span>
           </Link>
         </li>
-        <li to="/cv">
+        <li>
           <Link
+            to="/cv"
             className="footer-list"
             onClick={(event) => {
               activeNavFooter(event);
