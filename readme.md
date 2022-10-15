@@ -13,3 +13,4 @@
 - Contact
 - CV
 - (Blog)
+<img src="/images/moon.png" width="50%" height="50%">
