@@ -2,7 +2,7 @@ import "./footer.css";
 import { Link } from "react-router-dom";
 import React, { useEffect } from "react";
 
-export default function Header() {
+export default function Footer(props) {
   useEffect(() => {
     // Add Scroll event
     let lastScrollTop = 0;
@@ -72,6 +72,7 @@ export default function Header() {
             className="footer-list active"
             onClick={(event) => {
               activeNavFooter(event);
+              props.onChangeMode("Home");
             }}
           >
             <span className="icon">
@@ -86,6 +87,7 @@ export default function Header() {
             className="footer-list"
             onClick={(event) => {
               activeNavFooter(event);
+              props.onChangeMode("Portfolio");
             }}
           >
             <span className="icon">
@@ -100,6 +102,7 @@ export default function Header() {
             className="footer-list"
             onClick={(event) => {
               activeNavFooter(event);
+              props.onChangeMode("Contact");
             }}
           >
             <span className="icon">
@@ -114,6 +117,7 @@ export default function Header() {
             className="footer-list"
             onClick={(event) => {
               activeNavFooter(event);
+              props.onChangeMode("Cv");
             }}
           >
             <span className="icon">

@@ -2,7 +2,7 @@ import "./header.css";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 
-export default function Header() {
+export default function Header(props) {
   useEffect(() => {
     window.addEventListener("popstate", function () {
       initNavHeader();
@@ -46,6 +46,7 @@ export default function Header() {
               className="header-list active"
               onClick={(event) => {
                 activeNavHeader(event);
+                props.onChangeMode("Home");
               }}
             >
               Home
@@ -57,6 +58,7 @@ export default function Header() {
               className="header-list"
               onClick={(event) => {
                 activeNavHeader(event);
+                props.onChangeMode("Portfolio");
               }}
             >
               Portfolio
@@ -68,6 +70,7 @@ export default function Header() {
               className="header-list"
               onClick={(event) => {
                 activeNavHeader(event);
+                props.onChangeMode("Contact");
               }}
             >
               Contact
@@ -79,6 +82,7 @@ export default function Header() {
               className="header-list"
               onClick={(event) => {
                 activeNavHeader(event);
+                props.onChangeMode("Cv");
               }}
             >
               CV

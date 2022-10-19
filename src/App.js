@@ -1,5 +1,6 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
+import { useState } from "react";
 
 import Header from "./parts/header";
 import Footer from "./parts/footer";
@@ -12,10 +13,16 @@ import CV from "./routes/cv";
 import Notfound from "./routes/notfound";
 
 function App() {
+  const [mode, setMode] = useState("Home");
+
   return (
     <div className="App">
-      <Background></Background>
-      <Header></Header>
+      <Background path={mode}></Background>
+      <Header
+        onChangeMode={(param) => {
+          setMode(param);
+        }}
+      ></Header>
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/portfolio" element={<Portfolio />}></Route>
@@ -23,7 +30,11 @@ function App() {
         <Route path="/cv" element={<CV />}></Route>
         <Route path="*" element={<Notfound />}></Route>
       </Routes>
-      <Footer></Footer>
+      <Footer
+        onChangeMode={(param) => {
+          setMode(param);
+        }}
+      ></Footer>
     </div>
   );
 }
