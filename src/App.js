@@ -19,6 +19,7 @@ function App() {
     <div className="App">
       <Background path={mode}></Background>
       <Header
+        path={mode}
         onChangeMode={(param) => {
           setMode(param);
         }}
@@ -31,6 +32,7 @@ function App() {
         <Route path="*" element={<Notfound />}></Route>
       </Routes>
       <Footer
+        path={mode}
         onChangeMode={(param) => {
           setMode(param);
         }}

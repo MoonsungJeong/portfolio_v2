@@ -30,7 +30,7 @@ export default function Contact() {
           }
         })
         .filter(function (item, pos, self) {
-          return self.indexOf(item) == pos && item;
+          return self.indexOf(item) === pos && item;
         });
 
       var formData = {};
@@ -120,7 +120,7 @@ export default function Contact() {
           <form
             className="gform"
             method="POST"
-            action="https://script.google.com/macros/s/AKfycbzkocfWK3Urm1h-7VkRP_7mfolY-ctEtT3VRep--A/exec"
+            action="https://script.google.com/macros/s/AKfycbzOeR2Dn89FlROJUOiT2uyh8HeAYkXdahtAKW_91Hpi_m98qJX0TxMcx2WM5ZlcoGLr/exec"
           >
             <div className="form-elements">
               <input type="text" name="name" placeholder=" Full Name" />
