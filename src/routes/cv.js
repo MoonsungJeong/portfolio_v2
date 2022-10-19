@@ -7,7 +7,11 @@ export default function CV() {
     <main className="cv content-t">
       <div className="cv-container">
         <aside className="cv-side">
-          <img src="image/cat.png" alt="profile" className="cv-picture"></img>
+          <img
+            src="image/profile_Moonsung.jpg"
+            alt="profile"
+            className="cv-picture"
+          ></img>
           <Panel
             title="Bio"
             content={[
@@ -50,7 +54,7 @@ export default function CV() {
               {
                 title: "Self study",
                 date: "May 2019 - Current",
-                desc: "Studied web development, learning various skills (such as HTML, CSS, and JavaScript) from “opentutorials.org”. I have practiced using these skills to make many web apps and games. I also learned about server technologies, including AWS, Linux and MySQL. I have begun learning how to use WordPress.",
+                desc: "Studied web development, learning various skills (such as HTML, CSS, and JavaScript) from “opentutorials.org”. I have practiced using these skills to make many web apps and games. I also learned about server technologies, including AWS, Linux and MySQL.",
               },
             ]}
           ></CardCV>
@@ -84,14 +88,14 @@ export default function CV() {
             }}
             content={[
               {
-                title: "Inco Academy",
-                date: "May - June 2020",
-                desc: "Took a basic web technology course (covering HTML, CSS, WordPress, and SEO) during the coronavirus pandemic through Zoom. I not only studied web technology but also was able to practice my communication skills with the diverse group of people in the class.",
+                title: "TAFE Queensland",
+                date: "July 2021 - June 2022",
+                desc: "Completed Diploma of Website Development covering basic web technologies include HTML, CSS, JavaScript, NodeJS and Relational Databases. Built web applications that multiple users can access and deployed on online environment.",
               },
               {
                 title: "Opentutorials",
                 date: "June 2019 - Current",
-                desc: "Studying modern web development skills (HTML, CSS, JavaScript) and made web applications and games. I have also been studying other web technology (SPA, PWA) and improving my background knowledge of computer science in areas that I didn’t learn in university. Learned other basic technologies such as Github and AWS.",
+                desc: "Studying modern web development skills (HTML, CSS, JavaScript) and made web applications and games. Improving my background knowledge of computer science in areas that I didn’t learn in university. Learned other basic technologies such as Github and AWS.",
               },
               {
                 title: "Sejong University in Korea",
@@ -107,7 +111,7 @@ export default function CV() {
             }}
             content={[
               {
-                desc: "HTML, CSS, JavaScript, React, Node, MySQL, SPA, AWS",
+                desc: "HTML, CSS, JavaScript, React, Node, MySQL, PWA, AWS",
               },
             ]}
           ></CardCV>
@@ -118,7 +122,7 @@ export default function CV() {
             }}
             content={[
               {
-                desc: "I enjoy coding and like to make hardware for fun. I’m interested in Raspberry PI, camera modules and visual processing algorithms (OpenCV). I also enjoy running, swimming, and exercise in general.",
+                desc: "I enjoy computer game, especially Warcraft3. I'm interested in game programming and visual processing (OpenCV).",
               },
             ]}
           ></CardCV>

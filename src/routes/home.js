@@ -16,7 +16,7 @@ export default function Home() {
               title="BIO"
               content={[
                 "Hi! I’m Moonsung, a Korean web developer based in Australia.",
-                "I first got into computers because of computer games. While at high school, I became curious to know more about how the games work. I started just by using a game editor to make a modified version of Warcraft III. This is why I decided to learn more about computer engineering in university.",
+                "I first got into computers because of computer games. While at high school, I became curious to know more about how the games work. I started just by using a game editor to make a modified version of Warcraft III. This is why I decided to learn more about computer in university.",
                 "I now have a bigger passion for computers and coding, because I have learned that coding has unlimited possibilities and that I can make anything I imagine by coding. I always do my best to learn new languages and technologies to improve my skills. I also like thinking of ways to combine IT with other fields to add creative value.",
               ]}
             ></CardBasic>
@@ -55,7 +55,7 @@ export default function Home() {
                 },
                 {
                   brief: "Education",
-                  desc: "I went to Sejong University in Korea and graduated with bachelor’s degree in Information and Communication Engineering. While I was studying, I did many projects that taught me a lot about computer programming. I made codec (with Fourier transform) which is used in many fields. I worked as a team leader in a school project that analyzed differences between Live streaming and video streaming in a network subject.",
+                  desc: "I went to Sejong University in Korea and graduated with bachelor’s degree in Information and Communication Engineering. While I was studying, I learned basic computer knowledges and did many projects to implement these. I also completed a diploma of Website development in TAFE Queensland. Learned modern web technologies and actually built and deployed on real environment",
                 },
                 {
                   brief: "Opentutorials & Youtube",

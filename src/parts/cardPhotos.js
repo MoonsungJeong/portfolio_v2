@@ -59,19 +59,25 @@ export default function CardPhotos() {
           <div className="slide_box">
             <div className="slide_list">
               <div className="slide_content slide_01">
-                <img src="image/cat.png" className="slide_image" alt="photo1" />
+                <img
+                  src="image/Moonsung1.jpg"
+                  className="slide_image"
+                  alt="photo1"
+                />
               </div>
               <div className="slide_content slide_02">
-                <img src="image/cat.png" className="slide_image" alt="photo1" />
+                <img
+                  src="image/Moonsung2.jpg"
+                  className="slide_image"
+                  alt="photo1"
+                />
               </div>
               <div className="slide_content slide_03">
-                <img src="image/cat.png" className="slide_image" alt="photo1" />
-              </div>
-              <div className="slide_content slide_04">
-                <img src="image/cat.png" className="slide_image" alt="photo1" />
-              </div>
-              <div className="slide_content slide_05">
-                <img src="image/cat.png" className="slide_image" alt="photo1" />
+                <img
+                  src="image/Moonsung3.jpg"
+                  className="slide_image"
+                  alt="photo1"
+                />
               </div>
             </div>
           </div>
