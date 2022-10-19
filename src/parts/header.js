@@ -5,7 +5,6 @@ import { useEffect } from "react";
 export default function Header() {
   useEffect(() => {
     window.addEventListener("popstate", function () {
-      console.log("test");
       initNavHeader();
     });
   });
@@ -21,7 +20,6 @@ export default function Header() {
     pathList.forEach((item) => {
       if (item.innerText === pathPrevious) {
         pathList.forEach((element) => {
-          console.log(element);
           element.classList.remove("active");
         });
         item.classList.add("active");

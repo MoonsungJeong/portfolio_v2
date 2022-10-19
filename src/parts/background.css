@@ -22,7 +22,7 @@
   mix-blend-mode: screen;
 }
 .img-section img#ocean {
-  z-index: 10;
+  z-index: 14;
 }
 #btn {
   text-decoration: none;

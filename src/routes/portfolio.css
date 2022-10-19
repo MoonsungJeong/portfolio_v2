@@ -1,0 +1,33 @@
+.portfolio {
+  width: 100%;
+  padding: 0 1em;
+  z-index: 30;
+}
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  grid-row-gap: 2.5em;
+  grid-column-gap: 2.25em;
+  padding-bottom: 2.5em;
+  max-width: 80em;
+  margin-top: 8em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 770px) {
+  .portfolio-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .portfolio {
+    padding: 0 2em;
+  }
+}
+@media (min-width: 1280px) {
+  .portfolio-container {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .portfolio {
+    padding: 0 3em;
+  }
+}

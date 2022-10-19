@@ -28,8 +28,7 @@
   grid-gap: 0.6em;
 }
 .card-skill-img {
-  height: 3em;
-  width: 3em;
+  height: 1em;
 }
 .card-skill-container > div {
   text-align: center;

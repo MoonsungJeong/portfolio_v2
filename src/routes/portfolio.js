@@ -1,79 +1,53 @@
+import "./portfolio.css";
+import Project from "../parts/project";
+
 export default function Portfolio() {
   return (
-    <main className="sec" id="sec">
-      <h2>Parallax Scrolling Effects</h2>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, minima
-        obcaecati facilis aut maxime, totam aliquam magnam cumque numquam
-        ducimus, tenetur minus facere quasi nisi at error quas doloribus
-        excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Praesentium sequi iure deleniti eligendi id eaque ipsum ex minima hic,
-        sed cupiditate adipisci excepturi aut unde cumque sunt amet atque sit?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure facere
-        asperiores beatae eos voluptatem odio a voluptate, ipsam sunt quibusdam
-        sint placeat quod cumque nostrum consectetur ullam pariatur rem.
-        Expedita?
-        <br />
-        <br />
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, minima
-        obcaecati facilis aut maxime, totam aliquam magnam cumque numquam
-        ducimus, tenetur minus facere quasi nisi at error quas doloribus
-        excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Praesentium sequi iure deleniti eligendi id eaque ipsum ex minima hic,
-        sed cupiditate adipisci excepturi aut unde cumque sunt amet atque sit?
-        <br />
-        <br />
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, minima
-        obcaecati facilis aut maxime, totam aliquam magnam cumque numquam
-        ducimus, tenetur minus facere quasi nisi at error quas doloribus
-        excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Praesentium sequi iure deleniti eligendi id eaque ipsum ex minima hic,
-        sed cupiditate adipisci excepturi aut unde cumque sunt amet atque sit?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure facere
-        asperiores beatae eos voluptatem odio a voluptate, ipsam sunt quibusdam
-        sint placeat quod cumque nostrum consectetur ullam pariatur rem.
-        Expedita?
-        <br />
-        <br />
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, minima
-        obcaecati facilis aut maxime, totam aliquam magnam cumque numquam
-        ducimus, tenetur minus facere quasi nisi at error quas doloribus
-        excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Praesentium sequi iure deleniti eligendi id eaque ipsum ex minima hic,
-        sed cupiditate adipisci excepturi aut unde cumque sunt amet atque sit?
-        <br />
-        <br />
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, minima
-        obcaecati facilis aut maxime, totam aliquam magnam cumque numquam
-        ducimus, tenetur minus facere quasi nisi at error quas doloribus
-        excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Praesentium sequi iure deleniti eligendi id eaque ipsum ex minima hic,
-        sed cupiditate adipisci excepturi aut unde cumque sunt amet atque sit?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure facere
-        asperiores beatae eos voluptatem odio a voluptate, ipsam sunt quibusdam
-        sint placeat quod cumque nostrum consectetur ullam pariatur rem.
-        Expedita?
-        <br />
-        <br />
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, minima
-        obcaecati facilis aut maxime, totam aliquam magnam cumque numquam
-        ducimus, tenetur minus facere quasi nisi at error quas doloribus
-        excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Praesentium sequi iure deleniti eligendi id eaque ipsum ex minima hic,
-        sed cupiditate adipisci excepturi aut unde cumque sunt amet atque sit?
-        <br />
-        <br />
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, minima
-        obcaecati facilis aut maxime, totam aliquam magnam cumque numquam
-        ducimus, tenetur minus facere quasi nisi at error quas doloribus
-        excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Praesentium sequi iure deleniti eligendi id eaque ipsum ex minima hic,
-        sed cupiditate adipisci excepturi aut unde cumque sunt amet atque sit?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure facere
-        asperiores beatae eos voluptatem odio a voluptate, ipsam sunt quibusdam
-        sint placeat quod cumque nostrum consectetur ullam pariatur rem.
-        Expedita?
-      </p>
+    <main className="portfolio content-t">
+      <div className="portfolio-container">
+        <Project
+          link="https://github.com/MoonsungJeong/JS_Game/tree/master/worm_v2"
+          category="Game"
+          imgPath="image/wormgame.png"
+          title="Worm Game"
+          brief="JavaScript (Canvas)"
+        ></Project>
+        <Project
+          link="https://github.com/MoonsungJeong/JS_Game/tree/master/worm_v2"
+          category="Game"
+          imgPath="image/wormgame.png"
+          title="Worm Game"
+          brief="JavaScript (Canvas)"
+        ></Project>
+        <Project
+          link="https://github.com/MoonsungJeong/JS_Game/tree/master/worm_v2"
+          category="Game"
+          imgPath="image/wormgame.png"
+          title="Worm Game"
+          brief="JavaScript (Canvas)"
+        ></Project>
+        <Project
+          link="https://github.com/MoonsungJeong/JS_Game/tree/master/worm_v2"
+          category="Game"
+          imgPath="image/wormgame.png"
+          title="Worm Game"
+          brief="JavaScript (Canvas)"
+        ></Project>
+        <Project
+          link="https://github.com/MoonsungJeong/JS_Game/tree/master/worm_v2"
+          category="Game"
+          imgPath="image/wormgame.png"
+          title="Worm Game"
+          brief="JavaScript (Canvas)"
+        ></Project>
+        <Project
+          link="https://github.com/MoonsungJeong/JS_Game/tree/master/worm_v2"
+          category="Game"
+          imgPath="image/wormgame.png"
+          title="Worm Game"
+          brief="JavaScript (Canvas)"
+        ></Project>
+      </div>
     </main>
   );
 }
