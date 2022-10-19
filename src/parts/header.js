@@ -36,41 +36,6 @@ export default function Header(props) {
     target.classList.add("active");
   }
 
-  let list = [];
-  const menu = ["Home", "Portfolio", "Contact", "CV"];
-  for (let i = 0; i < 4; i++) {
-    if (menu[i] === props.path) {
-      list.push(
-        <li key={i}>
-          <Link
-            to={menu[i]}
-            className="header-list active"
-            onClick={(event) => {
-              activeNavHeader(event);
-              props.onChangeMode(menu[i]);
-            }}
-          >
-            {menu[i]}
-          </Link>
-        </li>
-      );
-    } else {
-      list.push(
-        <li key={i}>
-          <Link
-            to={menu[i]}
-            className="header-list"
-            onClick={(event) => {
-              activeNavHeader(event);
-              props.onChangeMode(menu[i]);
-            }}
-          >
-            {menu[i]}
-          </Link>
-        </li>
-      );
-    }
-  }
   return (
     <header>
       <Link
@@ -84,8 +49,7 @@ export default function Header(props) {
       </Link>
       <nav>
         <ul>
-          {list}
-          {/* <li>
+          <li>
             <Link
               to="/"
               className="header-list active"
@@ -132,7 +96,7 @@ export default function Header(props) {
             >
               CV
             </Link>
-          </li> */}
+          </li>
         </ul>
       </nav>
     </header>
