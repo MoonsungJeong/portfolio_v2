@@ -14,7 +14,6 @@ import Notfound from "./routes/notfound";
 
 function App() {
   const [mode, setMode] = useState("Home");
-
   return (
     <div className="App">
       <Background path={mode}></Background>

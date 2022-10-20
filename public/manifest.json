@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Moonsung Jeong",
+  "name": "Homepage of Moonsung Jeong",
   "icons": [
     {
       "src": "image/cat32.png",
@@ -10,7 +10,8 @@
     {
       "src": "image/cat192.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "192x192",
+      "purpose": "any maskable"
     },
     {
       "src": "image/cat512.png",
@@ -18,7 +19,8 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "http://localhost:3000",
+  "start_url": "http://localhost:3000/",
+  "scope": "http://localhost:3000/",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
