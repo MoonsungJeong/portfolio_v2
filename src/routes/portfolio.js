@@ -6,7 +6,7 @@ export default function Portfolio() {
     <main className="portfolio content-t">
       <div className="portfolio-container">
         <Project
-          link="https://github.com/MoonsungJeong/JS_Game/tree/master/worm_v2"
+          link="https://github.com/MoonsungJeong/portfolio_v2"
           category="Web"
           imgPath="image/website2.png"
           title="Portfolio 2 (SPA)"
@@ -15,7 +15,7 @@ export default function Portfolio() {
         <Project
           link="https://github.com/MoonsungJeong/Avocard"
           category="Web"
-          imgPath="image/Avocard.png"
+          imgPath="image/avocard.png"
           title="Avocard"
           brief="SPA, Node, PWA, Storage"
         ></Project>
