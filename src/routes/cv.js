@@ -26,7 +26,7 @@ export default function CV() {
             content={[
               {
                 icon: <i className="fas fa-map-marker-alt"></i>,
-                desc: "Brisbane, AU",
+                desc: "Melbourne, AU",
               },
               {
                 icon: <i className="far fa-envelope"></i>,
@@ -47,14 +47,17 @@ export default function CV() {
             }}
             content={[
               {
-                title: "Your company",
-                date: "Current - Future",
-                desc: "I hope to work for your company as a web developer. As a web developer, I will be able to bring both my technical skills and outgoing attitude to your organization.",
+                title: "Gentrack",
+                date: "Jan 2023 - Present",
+                desc: "As a Software Engineer, I participated in the Billing Software Delivery project for a water company. Through this project, I gained insight into how enterprise-level software is delivered. I contributed by developing modules and APIs that met customer requirements, and by improving software quality through code reviews and writing test cases. This project enhanced my teamwork, communication skills within the team, and provided practical experience.",
               },
               {
                 title: "Self study",
-                date: "May 2019 - Current",
+                date: "May 2019 - Present",
                 desc: "Studied web development, learning various skills (such as HTML, CSS, and JavaScript) from “opentutorials.org”. I have practiced using these skills to make many web apps and games. I also learned about server technologies, including AWS, Linux and MySQL.",
+              },
+              {
+                desc: "Currently working on Multi-players worm game using Typescript.",
               },
             ]}
           ></CardCV>
@@ -94,12 +97,12 @@ export default function CV() {
               },
               {
                 title: "Opentutorials",
-                date: "June 2019 - Current",
+                date: "June 2019 - July 2021",
                 desc: "Studying modern web development skills (HTML, CSS, JavaScript) and made web applications and games. Improving my background knowledge of computer science in areas that I didn’t learn in university. Learned other basic technologies such as Github and AWS.",
               },
               {
                 title: "Sejong University in Korea",
-                date: "May 2011 - Feb 2018",
+                date: "March 2011 - Feb 2018",
                 desc: "Studied Information and Communication Engineering. Curriculum was focusing on digital signal processing and telecommunication. Made a signal converting module (analog to digital), a file compressing module using Fourier Transform and many other applications. Learned how to use Linux server and virtual machine tools for many projects.",
               },
             ]}
@@ -111,7 +114,7 @@ export default function CV() {
             }}
             content={[
               {
-                desc: "HTML, CSS, JavaScript, React, Node, MySQL, PWA, AWS",
+                desc: "HTML, CSS, JavaScript, React, Node, MySQL, PWA, AWS, Typescript",
               },
             ]}
           ></CardCV>

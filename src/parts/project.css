@@ -40,6 +40,7 @@ a:hover .project-item {
   z-index: 15;
 }
 .project-explanation {
+  border: 1px solid gray;
   margin-top: -2em;
   margin-bottom: 2em;
   padding: 0.6em;

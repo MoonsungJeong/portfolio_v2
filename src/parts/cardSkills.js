@@ -68,6 +68,14 @@ export default function CardSkills() {
             src="image/aws.png"
           />
         </div>
+        <div>
+          <img
+            className="card-skill-img"
+            title="Typescript"
+            alt="Typescript"
+            src="image/typescript.png"
+          />
+        </div>
       </div>
     </div>
   );

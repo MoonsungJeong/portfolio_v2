@@ -6,6 +6,13 @@ export default function Portfolio() {
     <main className="portfolio content-t">
       <div className="portfolio-container">
         <Project
+          link="https://github.com/MoonsungJeong/worm_v3"
+          category="Game"
+          imgPath="image/worming_up1.png"
+          title="Multi-Player Worm Game (Ongoing)"
+          brief="Typescript"
+        ></Project>
+        <Project
           link="https://github.com/MoonsungJeong/portfolio_v2"
           category="Web"
           imgPath="image/website2.png"
@@ -22,7 +29,7 @@ export default function Portfolio() {
         <Project
           link="https://github.com/MoonsungJeong/bookboard"
           category="Web"
-          imgPath="image/Book.png"
+          imgPath="image/book.png"
           title="Book Board"
           brief="Node, Bootstrap, MVC"
         ></Project>
