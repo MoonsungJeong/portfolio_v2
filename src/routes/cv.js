@@ -48,8 +48,13 @@ export default function CV() {
             content={[
               {
                 title: "Gentrack",
-                date: "Jan 2023 - Present",
-                desc: "As a Software Engineer, I participated in the Billing Software Delivery project for a water company. Through this project, I gained insight into how enterprise-level software is delivered. I contributed by developing modules and APIs that met customer requirements, and by improving software quality through code reviews and writing test cases. This project enhanced my teamwork, communication skills within the team, and provided practical experience.",
+                date: "Junior Software Engineer (Feb 2023 - Present) ",
+                desc: "Member of the Billing Software Delivery project team for a major Queensland water supplier. This role includes:",
+                list: [
+                  "Developing modules and APIs",
+                  "Improving software quality through code reviews and writing test cases",
+                  "Managing release processes",
+                ],
               },
               {
                 title: "Self study",
@@ -63,29 +68,6 @@ export default function CV() {
           ></CardCV>
           <CardCV
             title={{
-              icon: <i className="fas fa-server"></i>,
-              desc: " Other Experience",
-            }}
-            content={[
-              {
-                title: "Hackathon in University",
-                date: "2017 summer",
-                desc: "Attended a hackathon at my university. It was good experience to work as a team and use technology to build a solution to a problem. Although we didn’t win, it was a great experience an very good motivation for self-improvement.",
-              },
-              {
-                title: "Creative design competition in University",
-                date: "2016 winter",
-                desc: "Attended a creative design competition at my university. Our team designed and created a product to solve a real-world problem. We created a baby monitoring device that sounds an alarm when the child has gone over a preset distance from their parent’s smart phone. We used Arduino with Bluetooth modules, a smart phone and a smart watch.",
-              },
-              {
-                title: "Korean Army",
-                date: "2013 - 2015",
-                desc: "I served in the military as a soldier and as part of the reserved force for the past several years. While serving, I was able to improve my organizational and leadership skills. My role was to manage the military’s web system.",
-              },
-            ]}
-          ></CardCV>
-          <CardCV
-            title={{
               icon: <i className="fas fa-graduation-cap"></i>,
               desc: " Education",
             }}
@@ -93,17 +75,44 @@ export default function CV() {
               {
                 title: "TAFE Queensland",
                 date: "July 2021 - June 2022",
-                desc: "Completed Diploma of Website Development covering basic web technologies include HTML, CSS, JavaScript, NodeJS and Relational Databases. Built web applications that multiple users can access and deployed on online environment.",
+                desc: "Completed Diploma of Website Development covering basic web technologies include HTML, CSS, JavaScript, NodeJS, ReactJS and Relational Databases. Built multi-user web applications and deployed these to online environments.",
               },
               {
                 title: "Opentutorials",
-                date: "June 2019 - July 2021",
-                desc: "Studying modern web development skills (HTML, CSS, JavaScript) and made web applications and games. Improving my background knowledge of computer science in areas that I didn’t learn in university. Learned other basic technologies such as Github and AWS.",
+                date: "June 2019 - Present",
+                desc: "Continually developing new web technology skills  with content from Opentutorials, a Korean non-profit coding community. Module content included:",
+                list: [
+                  "Developing multiple web applications.",
+                  "Modern web skills (HTML, CSS, JS, NodeJS) and other technologies, such as GitHub and AWS.",
+                ],
               },
               {
                 title: "Sejong University in Korea",
                 date: "March 2011 - Feb 2018",
-                desc: "Studied Information and Communication Engineering. Curriculum was focusing on digital signal processing and telecommunication. Made a signal converting module (analog to digital), a file compressing module using Fourier Transform and many other applications. Learned how to use Linux server and virtual machine tools for many projects.",
+                desc: "Information and Communication Engineering (B.S.). Curriculum was focusing on digital signal processing and telecommunication. Made a signal converting module (analog to digital), a file compressing module using Fourier Transform and many other applications. Learned how to use Linux server and virtual machine tools for many projects.",
+              },
+            ]}
+          ></CardCV>
+          <CardCV
+            title={{
+              icon: <i className="fas fa-server"></i>,
+              desc: " Other Experience",
+            }}
+            content={[
+              {
+                title: "Hackathon in University",
+                date: "2017 summer",
+                desc: "Competed in a hackathon challenge to build a practical solution to a problem facing the university. Worked as a team and designed a new student management system, using Java and LAMP.",
+              },
+              {
+                title: "Creative design competition in University",
+                date: "2016 winter",
+                desc: "Competed to design and create a product to solve a real-world problem. Created a baby monitoring device that sounds an alarm when the child has gone over a preset distance from their parent’s smart phone. Used Arduino with Bluetooth modules, a smart phone, and a smart watch.",
+              },
+              {
+                title: "Korean Army",
+                date: "2013 - 2015",
+                desc: "Sergeant. Led and commanded privates as squad leader in various activities,  including maintaining the database of malware attempting to infiltrate the military network.",
               },
             ]}
           ></CardCV>
